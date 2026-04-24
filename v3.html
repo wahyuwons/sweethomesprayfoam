@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Home Spray Foam | Premier Energy Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#233e3e',
+                            dark: '#162828',
+                            light: '#355959',
+                        },
+                        secondary: {
+                            DEFAULT: '#d3c9a5',
+                            dark: '#bfae7e',
+                            light: '#e6dfc7',
+                        },
+                        surface: '#f7f9f9',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing: antialiased; background-color: #233e3e; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .glass-dark { background: rgba(35, 62, 62, 0.98); backdrop-filter: blur(15px); border: 1px solid rgba(211, 201, 165, 0.1); }
+        .blueprint-bg { 
+            background-image: radial-gradient(#233e3e 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="bg-primary-dark text-white text-[10px] md:text-xs font-bold py-2.5 px-4 text-center tracking-[0.2em] uppercase relative z-50">
+        📍 Serving Richmond, Lynchburg, Roanoke, Smith Mountain Lake & surrounding communities
+    </div>
+
+    <div class="sticky top-6 z-50 px-4 sm:px-6 lg:px-8 transition-all duration-500" id="navbar-wrapper">
+        <nav class="max-w-7xl mx-auto bg-primary-dark/80 backdrop-blur-md border border-secondary/20 rounded-full px-4 py-2 flex justify-between items-center shadow-[0_8px_30px_rgba(0,0,0,0.2)]">
+            
+            <div class="flex items-center pl-4 lg:w-1/4">
+                <a href="#" class="group block">
+                    <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/5f6cce94-0581-47bb-a48f-31468990a2ca/Logo-F4.png" alt="Sweet Home Logo" class="h-9 lg:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+                </a>
+            </div>
+
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-6 bg-black/20 px-8 py-2.5 rounded-full border border-white/5 backdrop-blur-sm">
+                <a href="#services" class="text-[10px] font-extrabold text-white/80 uppercase tracking-[0.15em] hover:text-secondary transition-all duration-300 hover:-translate-y-0.5">Services</a>
+                <a href="#why-us" class="text-[10px] font-extrabold text-white/80 uppercase tracking-[0.15em] hover:text-secondary transition-all duration-300 hover:-translate-y-0.5">Why Us</a>
+                <a href="#rebates" class="text-[10px] font-extrabold text-white/80 uppercase tracking-[0.15em] hover:text-secondary transition-all duration-300 hover:-translate-y-0.5">Rebates</a>
+                <a href="#locations" class="text-[10px] font-extrabold text-white/80 uppercase tracking-[0.15em] hover:text-secondary transition-all duration-300 hover:-translate-y-0.5">Locations</a>
+            </div>
+
+            <div class="flex items-center justify-end gap-4 lg:w-1/4 pr-1">
+                <a href="#form" class="hidden sm:inline-flex items-center justify-center px-7 py-2.5 text-[11px] bg-gradient-to-r from-secondary to-secondary-dark text-primary-dark font-black uppercase tracking-widest rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(211,201,165,0.3)] hover:shadow-[0_0_25px_rgba(211,201,165,0.5)] hover:scale-105 active:scale-95">
+                    Free Estimate
+                </a>
+                
+                <button class="lg:hidden p-2 text-white/80 hover:text-secondary transition-colors" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+        </nav>
+    </div>
+
+    <header class="relative pt-20 pb-32 lg:pt-32 lg:pb-48 bg-primary overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/6eba0c8d-4fe0-484d-ab2b-90883f90b7eb/Spray+Foam+Insulation+Lynchburg%2C+Richmond%2C+Roanoke1.jpeg" class="w-full h-full object-cover opacity-10 grayscale">
+            <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/90 to-transparent"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-7 reveal">
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-[0.95] text-white tracking-tighter mb-8">
+                        Make Your Home <br>More <span class="text-secondary italic">Comfortable</span> <br>& Energy Efficient
+                    </h1>
+                    <p class="text-xl text-white/60 font-light leading-relaxed max-w-xl mb-12">
+                        Lower your energy bills, eliminate hot and cold spots, and discover available rebates for your home.
+                    </p>
+                    <div class="flex flex-wrap gap-6 mb-12 text-white/90 font-bold text-sm">
+                        <span class="flex items-center gap-2">✔ Reduce energy loss</span>
+                        <span class="flex items-center gap-2">✔ Improve comfort</span>
+                        <span class="flex items-center gap-2">✔ Professional installation</span>
+                        <span class="flex items-center gap-2">✔ Clear pricing</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#form" class="inline-flex items-center justify-center px-10 py-5 text-xs bg-gradient-to-r from-secondary to-secondary-dark text-primary-dark font-black uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(211,201,165,0.3)] hover:shadow-[0_0_25px_rgba(211,201,165,0.5)] hover:scale-105 active:scale-95">
+                            Get My Free Estimate
+                        </a>
+                        <a href="#rebates" class="inline-flex items-center justify-center px-10 py-5 text-xs bg-transparent border-2 border-white/20 text-white font-black uppercase tracking-[0.2em] rounded-full transition-all duration-300 hover:bg-white/10 hover:border-white/40 active:scale-95">
+                            Rebate Info
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 reveal delay-100">
+                    <div class="bg-white p-10 rounded-3xl shadow-2xl border-t-[8px] border-secondary">
+                        <h3 class="text-3xl font-black text-primary mb-2 tracking-tight">Quick form</h3>
+                        <p class="text-gray-500 mb-8 text-sm">Receive your estimate within 24 hours.</p>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Full Name" class="w-full p-4 bg-gray-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-secondary/50 transition-all" required>
+                            <input type="email" placeholder="Email" class="w-full p-4 bg-gray-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-secondary/50 transition-all" required>
+                            <input type="tel" placeholder="Phone" class="w-full p-4 bg-gray-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-secondary/50 transition-all" required>
+                            <input type="text" placeholder="Property Address" class="w-full p-4 bg-gray-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-secondary/50 transition-all" required>
+                            <select class="w-full p-4 bg-gray-50 rounded-xl text-sm font-bold text-gray-600 outline-none focus:ring-2 focus:ring-secondary/50 transition-all">
+                                <option disabled selected>“What are you looking for?”</option>
+                                <option>Spray Foam Insulation</option>
+                                <option>Commercial Foam Roofing</option>
+                                <option>Concrete Lifting</option>
+                                <option>Attic Insulation</option>
+                                <option>Crawl Space</option>
+                                <option>Metal Building</option>
+                                <option>Other</option>
+                            </select>
+                            <select class="w-full p-4 bg-gray-50 rounded-xl text-sm font-bold text-gray-600 outline-none focus:ring-2 focus:ring-secondary/50 transition-all">
+                                <option disabled selected>Project Timeline</option>
+                                <option>ASAP</option>
+                                <option>Within 30 days</option>
+                                <option>Planning Stage</option>
+                            </select>
+                            <textarea placeholder="Additional Details" class="w-full p-4 bg-gray-50 rounded-xl text-sm h-24 resize-none outline-none focus:ring-2 focus:ring-secondary/50 transition-all"></textarea>
+                            
+                            <button class="w-full py-5 text-xs bg-primary text-secondary font-black uppercase tracking-widest rounded-full transition-all duration-300 shadow-lg hover:bg-primary-light hover:shadow-xl hover:-translate-y-1 active:scale-95 flex items-center justify-center mt-2">
+                                Get My Free Estimate
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-20 gap-8 reveal">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-primary tracking-tighter uppercase">Why Your Home <br><span class="text-secondary italic">Feels Uncomfortable</span></h2>
+                <p class="max-w-md text-gray-500 font-light leading-relaxed">Spray foam insulation seals gaps and improves your home's efficiency and comfort year-round.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-0 border border-gray-100 rounded-[3rem] overflow-hidden shadow-2xl">
+                <div class="p-12 border-r border-gray-100 hover:bg-primary hover:text-white transition-all duration-500 group reveal">
+                    <span class="text-secondary font-black text-sm mb-8 block">01</span>
+                    <h3 class="text-2xl font-bold mb-4">High energy bills</h3>
+                    <p class="text-gray-500 group-hover:text-white/60 font-light">Utility costs keep increasing due to poor insulation that fails to stop heat transfer.</p>
+                </div>
+                <div class="p-12 border-r border-gray-100 hover:bg-primary hover:text-white transition-all duration-500 group reveal delay-100">
+                    <span class="text-secondary font-black text-sm mb-8 block">02</span>
+                    <h3 class="text-2xl font-bold mb-4">Rooms too hot/cold</h3>
+                    <p class="text-gray-500 group-hover:text-white/60 font-light">Inconsistent temperatures make living in your own home uncomfortable depending on the season.</p>
+                </div>
+                <div class="p-12 hover:bg-primary hover:text-white transition-all duration-500 group reveal delay-200">
+                    <span class="text-secondary font-black text-sm mb-8 block">03</span>
+                    <h3 class="text-2xl font-bold mb-4">Air leaks & insulation</h3>
+                    <p class="text-gray-500 group-hover:text-white/60 font-light">Outside air enters while conditioned air escapes through tiny gaps fiberglass can't seal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center reveal">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-12 tracking-tight">What You Get With Spray Foam Insulation</h2>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <div class="px-6 py-4 rounded-full border border-gray-200 bg-surface shadow-sm font-bold text-primary flex items-center gap-3 hover:border-secondary hover:-translate-y-1 transition-all">
+                    <i data-lucide="dollar-sign" class="w-5 h-5 text-secondary"></i> Lower monthly energy bills
+                </div>
+                <div class="px-6 py-4 rounded-full border border-gray-200 bg-surface shadow-sm font-bold text-primary flex items-center gap-3 hover:border-secondary hover:-translate-y-1 transition-all">
+                    <i data-lucide="thermometer" class="w-5 h-5 text-secondary"></i> More consistent indoor temperatures
+                </div>
+                <div class="px-6 py-4 rounded-full border border-gray-200 bg-surface shadow-sm font-bold text-primary flex items-center gap-3 hover:border-secondary hover:-translate-y-1 transition-all">
+                    <i data-lucide="shield" class="w-5 h-5 text-secondary"></i> Better air sealing and moisture control
+                </div>
+                <div class="px-6 py-4 rounded-full border border-gray-200 bg-surface shadow-sm font-bold text-primary flex items-center gap-3 hover:border-secondary hover:-translate-y-1 transition-all">
+                    <i data-lucide="droplets" class="w-5 h-5 text-secondary"></i> Long-lasting performance vs traditional insulation
+                </div>
+            </div>
+            
+            <a href="#form" class="inline-flex items-center justify-center px-10 py-4 text-xs bg-primary text-secondary font-black uppercase tracking-widest rounded-full transition-all duration-300 shadow-lg hover:bg-primary-light hover:shadow-xl hover:-translate-y-1 active:scale-95">
+                Get a Free Estimate
+            </a>
+        </div>
+    </section>
+
+
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-16 tracking-tighter">Our Spray Foam Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 reveal">
+                <div class="p-10 rounded-3xl bg-primary text-white relative overflow-hidden group">
+                    <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/43ead0e2-4fb3-4f43-bf58-c1ceac935315/Spray-Foam.png" class="absolute inset-0 w-full h-full object-cover opacity-10 grayscale group-hover:scale-110 transition-transform duration-700">
+                    <div class="relative z-10">
+                        <span class="text-secondary font-black text-[10px] uppercase tracking-[0.2em] mb-4 block">Existing Homes</span>
+                        <h3 class="text-2xl font-extrabold mb-4">Attic Insulation</h3>
+                        <p class="text-white/70 font-light text-sm">Stop energy loss at the source and keep your home cooler in summer and warmer in winter.</p>
+                    </div>
+                </div>
+                <div class="p-10 rounded-3xl bg-surface border border-gray-100 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-primary mb-4">Crawl Space Insulation</h3>
+                    <p class="text-gray-500 font-light text-sm leading-relaxed">Eliminate drafts, moisture issues, and cold floors for a healthier, more comfortable home.</p>
+                </div>
+                <div class="p-10 rounded-3xl bg-surface border border-gray-100 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-primary mb-4">Wall Insulation (Existing Homes)</h3>
+                    <p class="text-gray-500 font-light text-sm leading-relaxed">Improve comfort and efficiency without tearing your home apart.</p>
+                </div>
+            </div>
+
+            <div class="reveal delay-100 pt-8 border-t border-gray-100">
+                <span class="text-gray-400 font-black text-[10px] uppercase tracking-[0.3em] mb-8 block">Other Services</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-secondary transition-colors">
+                        <h4 class="font-bold text-primary mb-2">New Construction</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Start with high-performance insulation for maximum efficiency and long-term savings.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-secondary transition-colors">
+                        <h4 class="font-bold text-primary mb-2">Commercial Foam Roofing</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Create a seamless, energy-efficient roof that resists leaks and lowers operating costs.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-secondary transition-colors">
+                        <h4 class="font-bold text-primary mb-2">Metal Buildings</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Regulate temperature and reduce condensation to make your space usable year-round.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-secondary transition-colors">
+                        <h4 class="font-bold text-primary mb-2">Concrete Lifting</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Lift and level sunken concrete quickly without the cost or mess of replacement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-24 bg-surface relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-4xl font-extrabold text-primary mb-6">Why Homeowners Choose Sweet Home</h2>
+                    <p class="text-xl text-secondary-dark font-medium mb-10 leading-relaxed">Hiring a contractor shouldn’t feel confusing, rushed, or stressful. We built Sweet Home Spray Foam to do things differently.</p>
+                    <div class="space-y-6 text-gray-600 font-light text-lg mb-10">
+                        <p>Most homeowners we talk to have had a frustrating experience before—unclear pricing, rushed recommendations, or work that didn’t quite deliver. <strong class="text-primary">That’s not how we operate.</strong></p>
+                        <p>From the first conversation to the final install, our goal is simple: make the process clear, comfortable, and worth it.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-10 font-bold text-sm text-primary">
+                        <div>✔ Clear upfront estimates</div>
+                        <div>✔ No-pressure recommendations</div>
+                        <div>✔ Simple explanations</div>
+                        <div>✔ Clean installation</div>
+                        <div>✔ Fast response</div>
+                        <div>✔ Guidance on rebates</div>
+                    </div>
+                    
+                    <a href="#form" class="inline-flex items-center justify-center px-10 py-4 text-xs bg-primary text-secondary font-black uppercase tracking-widest rounded-full transition-all duration-300 shadow-lg hover:bg-primary-light hover:shadow-xl hover:-translate-y-1 active:scale-95">
+                        About Us
+                    </a>
+                </div>
+                <div class="relative reveal delay-100">
+                    <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/890c852e-7d4c-42e3-962c-017cc4199885/Spray+Foam+Insulation+Lynchburg%2C+Richmond%2C+Roanoke11.webp" class="rounded-3xl shadow-2xl border-8 border-white grayscale-[30%] hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -bottom-6 -left-6 bg-secondary p-8 text-primary-dark max-w-xs shadow-xl hidden lg:block">
+                        <p class="font-bold italic">"Making your home feel better to live in is our ultimate goal."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rebates" class="py-32 relative overflow-hidden bg-primary-dark">
+        <div class="absolute inset-0">
+            <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/e83d4c0b-3939-4128-b56d-4ae3582d3cab/Spray+Foam+Insulation+Lynchburg%2C+Richmond%2C+Roanoke2.webp" class="w-full h-full object-cover opacity-10">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white text-center mb-8 tracking-tighter leading-tight">You May Qualify for <br><span class="text-secondary italic">Energy Rebates</span></h2>
+            <p class="text-xl text-white/60 text-center mb-20 font-light max-w-3xl">We help homeowners understand rebate opportunities that may lower project costs.</p>
+            
+            <div class="glass-blur p-12 rounded-3xl w-full max-w-4xl shadow-2xl reveal">
+                <div class="flex flex-col md:flex-row justify-around items-center gap-12 text-center">
+                    <div>
+                        <p class="text-xs font-black text-secondary uppercase tracking-[0.3em] mb-4">Standard Home</p>
+                        <p class="text-5xl font-extrabold text-white/20 line-through decoration-secondary/50">$420<span class="text-sm">/mo</span></p>
+                        <p class="text-[10px] mt-4 font-bold text-gray-500 uppercase tracking-widest leading-relaxed text-center">Standard Bill</p>
+                    </div>
+                    <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center border border-secondary/30">
+                        <i data-lucide="trending-down" class="text-secondary w-10 h-10"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-black text-secondary uppercase tracking-[0.3em] mb-4">Optimized Home</p>
+                        <p class="text-6xl font-extrabold text-white">$280<span class="text-sm">/mo</span></p>
+                        <p class="text-[10px] mt-4 font-bold text-accent uppercase tracking-widest leading-relaxed text-center">New Savings</p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#form" class="mt-16 w-full sm:w-auto inline-flex items-center justify-center px-12 py-5 text-xs bg-gradient-to-r from-secondary to-secondary-dark text-primary-dark font-black uppercase tracking-widest rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(211,201,165,0.3)] hover:shadow-[0_0_25px_rgba(211,201,165,0.5)] hover:scale-105 active:scale-95">
+                Check If You Qualify
+            </a>
+        </div>
+    </section>
+
+    <section id="locations" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-20 text-center tracking-tighter uppercase">Proudly Serving Central & Southwest Virginia</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="map-container group relative h-[450px] rounded-3xl overflow-hidden reveal">
+                    <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/6eba0c8d-4fe0-484d-ab2b-90883f90b7eb/Spray+Foam+Insulation+Lynchburg%2C+Richmond%2C+Roanoke1.jpeg" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-10 transition-all duration-700 grayscale-[100%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-primary opacity-60 group-hover:opacity-0 transition-opacity"></div>
+                    <h4 class="absolute top-1/2 left-0 w-full text-center text-white font-black text-2xl uppercase tracking-tighter -translate-y-1/2 group-hover:opacity-0 transition-all">Richmond, VA</h4>
+                    
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101683.74315264387!2d-79.25586616656754!3d37.38790098485292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d07b39f783cb%3A0xc345daabf8812616!2sLynchburg%2C%20VA!5e0!3m2!1sen!2sus!4v1700000000001!5m2!1sen!2sus6" width="100%" height="100%" class="rounded-2xl border-0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+                    <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-t-3xl">
+                        <h5 class="font-black text-xs uppercase text-primary mb-2 tracking-widest text-center">Metro Richmond Area</h5>
+                        <p class="text-[10px] text-gray-500 font-medium mb-4 leading-relaxed text-center italic">Chesterfield, Henrico, Midlothian, Glen Allen, Mechanicsville, Powhatan, Goochland, Hanover.</p>
+                        <button class="w-full py-3 text-[10px] bg-primary text-secondary font-black uppercase tracking-widest rounded-full transition-all duration-300 hover:bg-primary-light hover:-translate-y-0.5 active:scale-95 flex items-center justify-center">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="map-container group relative h-[450px] rounded-3xl overflow-hidden reveal delay-100">
+                    <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/e83d4c0b-3939-4128-b56d-4ae3582d3cab/Spray+Foam+Insulation+Lynchburg%2C+Richmond%2C+Roanoke2.webp" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-10 transition-all duration-700 grayscale-[100%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-primary opacity-60 group-hover:opacity-0 transition-opacity"></div>
+                    <h4 class="absolute top-1/2 left-0 w-full text-center text-white font-black text-2xl uppercase tracking-tighter -translate-y-1/2 group-hover:opacity-0 transition-all">Lynchburg, VA</h4>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101683.74315264387!2d-79.25586616656754!3d37.38790098485292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d07b39f783cb%3A0xc345daabf8812616!2sLynchburg%2C%20VA!5e0!3m2!1sen!2sus!4v1700000000001!5m2!1sen!2sus7" width="100%" height="100%" class="rounded-2xl border-0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-t-3xl">
+                        <h5 class="font-black text-xs uppercase text-primary mb-2 tracking-widest text-center">Hill City & Beyond</h5>
+                        <p class="text-[10px] text-gray-500 font-medium mb-4 leading-relaxed text-center italic">Forest, Madison Heights, Bedford, Campbell County, Amherst, Appomattox, Pittsylvania, Altavista.</p>
+                        <button class="w-full py-3 text-[10px] bg-primary text-secondary font-black uppercase tracking-widest rounded-full transition-all duration-300 hover:bg-primary-light hover:-translate-y-0.5 active:scale-95 flex items-center justify-center">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="map-container group relative h-[450px] rounded-3xl overflow-hidden reveal delay-200">
+                    <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/890c852e-7d4c-42e3-962c-017cc4199885/Spray+Foam+Insulation+Lynchburg%2C+Richmond%2C+Roanoke11.webp" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-10 transition-all duration-700 grayscale-[100%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-primary opacity-60 group-hover:opacity-0 transition-opacity"></div>
+                    <h4 class="absolute top-1/2 left-0 w-full text-center text-white font-black text-2xl uppercase tracking-tighter -translate-y-1/2 group-hover:opacity-0 transition-all">Roanoke, VA</h4>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101683.74315264387!2d-79.25586616656754!3d37.38790098485292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d07b39f783cb%3A0xc345daabf8812616!2sLynchburg%2C%20VA!5e0!3m2!1sen!2sus!4v1700000000001!5m2!1sen!2sus8" width="100%" height="100%" class="rounded-2xl border-0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-t-3xl">
+                        <h5 class="font-black text-xs uppercase text-primary mb-2 tracking-widest text-center">Roanoke Valley</h5>
+                        <p class="text-[10px] text-gray-500 font-medium mb-4 leading-relaxed text-center italic">Salem, Vinton, Cave Spring, Botetourt, Franklin County, Rocky Mount, Floyd, New River Valley.</p>
+                        <button class="w-full py-3 text-[10px] bg-primary text-secondary font-black uppercase tracking-widest rounded-full transition-all duration-300 hover:bg-primary-light hover:-translate-y-0.5 active:scale-95 flex items-center justify-center">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="map-container group relative h-[450px] rounded-3xl overflow-hidden reveal delay-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/466d4085-e16f-46a6-b780-bdb9c67b27d6/Leveling-Experts-Image.webp" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-10 transition-all duration-700 grayscale-[100%] group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-primary opacity-60 group-hover:opacity-0 transition-opacity"></div>
+                    <h4 class="absolute top-1/2 left-0 w-full text-center text-white font-black text-xl uppercase tracking-tighter -translate-y-1/2 group-hover:opacity-0 transition-all">S. Mountain Lake</h4>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101683.74315264387!2d-79.25586616656754!3d37.38790098485292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d07b39f783cb%3A0xc345daabf8812616!2sLynchburg%2C%20VA!5e0!3m2!1sen!2sus!4v1700000000001!5m2!1sen!2sus9" width="100%" height="100%" class="rounded-2xl border-0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full bg-white/95 backdrop-blur p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-t-3xl">
+                        <h5 class="font-black text-xs uppercase text-primary mb-2 tracking-widest text-center">Waterfront Property</h5>
+                        <p class="text-[10px] text-gray-500 font-medium mb-4 leading-relaxed text-center italic">Moneta, Huddleston, Union Hall, Penhook, Wirtz, Glade Hill, and waterfront counties.</p>
+                        <button class="w-full py-3 text-[10px] bg-primary text-secondary font-black uppercase tracking-widest rounded-full transition-all duration-300 hover:bg-primary-light hover:-translate-y-0.5 active:scale-95 flex items-center justify-center">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-16 tracking-tight reveal">Homeowners Trust Sweet Home Spray Foam</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="p-10 bg-surface rounded-3xl border border-gray-100 relative shadow-sm reveal">
+                    <i data-lucide="quote" class="absolute top-6 left-6 text-secondary/20 w-12 h-12"></i>
+                    <p class="text-lg italic text-gray-600 mb-6 font-medium leading-relaxed">"The best decision we made for our renovation. The team was professional and the utility savings were immediate."</p>
+                    <p class="font-bold text-primary uppercase text-xs tracking-widest">— Local Richmond Resident</p>
+                </div>
+                <div class="p-10 bg-surface rounded-3xl border border-gray-100 relative shadow-sm reveal delay-100">
+                    <i data-lucide="quote" class="absolute top-6 left-6 text-secondary/20 w-12 h-12"></i>
+                    <p class="text-lg italic text-gray-600 mb-6 font-medium leading-relaxed">"Quality installation and excellent customer service. They walked us through everything and the results are amazing."</p>
+                    <p class="font-bold text-primary uppercase text-xs tracking-widest">— Happy Homeowner</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 reveal delay-200">
+                <div class="flex flex-col items-center p-6 bg-white border border-gray-100 rounded-2xl shadow-lg w-48 group hover:border-secondary transition-colors">
+                    <i data-lucide="map" class="w-8 h-8 text-secondary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-[10px] font-black uppercase tracking-widest">Locally owned & operated</span>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white border border-gray-100 rounded-2xl shadow-lg w-48 group hover:border-secondary transition-colors">
+                    <i data-lucide="award" class="w-8 h-8 text-secondary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-[10px] font-black uppercase tracking-widest">Backed by proven systems</span>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white border border-gray-100 rounded-2xl shadow-lg w-48 group hover:border-secondary transition-colors">
+                    <i data-lucide="shield-check" class="w-8 h-8 text-secondary mb-3 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-[10px] font-black uppercase tracking-widest">Licensed & Insured</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-32 bg-surface relative overflow-hidden">
+        <div class="absolute inset-0 blueprint-bg"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-24 reveal">
+                <span class="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-4 block">How It Works</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">The Path to <span class="text-secondary italic">Efficiency</span></h2>
+            </div>
+            
+            <div class="relative">
+                <div class="hidden lg:block absolute top-12 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-transparent via-gray-300 to-transparent z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
+                    
+                    <div class="relative z-10 group reveal">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-24 h-24 bg-white rounded-3xl shadow-lg flex items-center justify-center mb-6 group-hover:-translate-y-3 transition-all duration-500 border border-gray-100 group-hover:border-secondary group-hover:shadow-secondary/20 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-secondary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                                <span class="absolute top-2 right-3 text-[10px] font-black text-gray-200">01</span>
+                                <i data-lucide="mouse-pointer-click" class="w-8 h-8 text-primary relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary mb-3">Request Estimate</h4>
+                            <p class="text-sm text-gray-500 leading-relaxed px-2">Contact us through our portal to initiate your energy assessment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative z-10 group reveal delay-100">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-24 h-24 bg-white rounded-3xl shadow-lg flex items-center justify-center mb-6 group-hover:-translate-y-3 transition-all duration-500 border border-gray-100 group-hover:border-secondary group-hover:shadow-secondary/20 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-secondary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                                <span class="absolute top-2 right-3 text-[10px] font-black text-gray-200">02</span>
+                                <i data-lucide="search" class="w-8 h-8 text-primary relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary mb-3">Home Inspection</h4>
+                            <p class="text-sm text-gray-500 leading-relaxed px-2">Our engineers inspect your property's envelope for air leakage.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 group reveal delay-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-24 h-24 bg-white rounded-3xl shadow-lg flex items-center justify-center mb-6 group-hover:-translate-y-3 transition-all duration-500 border border-gray-100 group-hover:border-secondary group-hover:shadow-secondary/20 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-secondary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                                <span class="absolute top-2 right-3 text-[10px] font-black text-gray-200">03</span>
+                                <i data-lucide="file-text" class="w-8 h-8 text-primary relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary mb-3">Clear Plan</h4>
+                            <p class="text-sm text-gray-500 leading-relaxed px-2">We provide a transparent, no-pressure recommendation.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 group reveal delay-300">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-24 h-24 bg-primary rounded-3xl shadow-lg flex items-center justify-center mb-6 group-hover:-translate-y-3 transition-all duration-500 border border-primary group-hover:shadow-primary/40 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-secondary/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                                <span class="absolute top-2 right-3 text-[10px] font-black text-white/20">04</span>
+                                <i data-lucide="hammer" class="w-8 h-8 text-secondary relative z-10 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-500"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary mb-3">Installation</h4>
+                            <p class="text-sm text-gray-500 leading-relaxed px-2">Clean, fast installation with the industry's highest quality foam.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center reveal delay-400">
+                <a href="#form" class="inline-flex items-center gap-3 px-10 py-4 text-xs bg-transparent border-2 border-primary/20 text-primary font-black uppercase tracking-widest rounded-full transition-all duration-300 hover:border-secondary hover:text-secondary hover:-translate-y-1 active:scale-95 shadow-sm hover:shadow-lg">
+                    Schedule Your Estimate <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 relative overflow-hidden flex items-center justify-center min-h-[600px] bg-primary-dark">
+        <div class="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px] mix-blend-overlay"></div>
+        <div class="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-primary-light/40 rounded-full blur-[150px] mix-blend-overlay pointer-events-none"></div>
+        
+        <div class="absolute inset-0 blueprint-bg opacity-10"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full reveal">
+            <div class="bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-[3rem] p-10 md:p-20 text-center shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden group">
+                
+                <div class="absolute top-0 left-[-100%] w-[50%] h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-[-45deg] group-hover:left-[200%] transition-all duration-1000 ease-in-out pointer-events-none"></div>
+
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 tracking-tighter leading-[1.1]">
+                    Ready to Make  <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-white">Your Home Better? </span>
+                </h2>
+                
+                <p class="text-lg md:text-xl text-white/70 mb-12 font-light max-w-2xl mx-auto">
+                    Stop living with drafts, high energy bills, and uncomfortable rooms. Get a fast, no-obligation estimate today.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="#form" class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 text-xs bg-gradient-to-r from-secondary to-secondary-dark text-primary-dark font-black uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(211,201,165,0.3)] hover:shadow-[0_0_25px_rgba(211,201,165,0.5)] hover:scale-105 active:scale-95">
+                        Get Free Estimate
+                    </a>
+                    
+                    <a href="tel:8043626322" class="w-full sm:w-auto group/btn inline-flex items-center justify-center gap-4 px-8 py-4 text-xs bg-transparent border-2 border-white/20 text-white font-black uppercase tracking-widest rounded-full transition-all duration-300 hover:bg-white/10 hover:border-white/40 active:scale-95">
+                        <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover/btn:bg-secondary group-hover/btn:text-primary-dark transition-colors duration-300">
+                            <i data-lucide="phone" class="w-4 h-4"></i> 
+                        </div>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary-dark text-gray-400 py-16 border-t border-primary-light/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <img src="https://images.squarespace-cdn.com/content/v1/69d440473d419e2905ae5735/5f6cce94-0581-47bb-a48f-31468990a2ca/Logo-F4.png" alt="Sweet Home Spray Foam" class="h-16 object-contain mb-6">
+                <p class="text-sm font-medium text-gray-400 leading-relaxed">
+                    Virginia’s premier contractor for high-performance spray foam insulation, concrete lifting, and commercial roofing. Better comfort, lower bills.
+                </p>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Services links</h4>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li><a href="#" class="hover:text-white transition-colors">Spray Foam Insulation</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Commercial Foam Roofing</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Concrete Lifting</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Attic & Crawl Space</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Metal Buildings</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Service Areas</h4>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li>Richmond, VA</li>
+                    <li>Lynchburg, VA</li>
+                    <li>Roanoke, VA</li>
+                    <li>Smith Mountain Lake</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Contact Info & Hours</h4>
+                <ul class="space-y-3 text-sm font-medium mb-8">
+                    <li><a href="mailto:info@sweethomesprayfoam.com" class="hover:text-white transition-colors flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> info@sweethomesprayfoam.com</a></li>
+                    <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4"></i> Mon-Fri: 8am - 6pm</li>
+                </ul>
+                
+                <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Social links</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors font-semibold text-sm">Facebook</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors font-semibold text-sm">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-white/10 text-center">
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">© 2026 Sweet Home Spray Foam Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.15 });
+            revealElements.forEach(el => revealOnScroll.observe(el));
+        });
+    </script>
+</body>
+</html>
